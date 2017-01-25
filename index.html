@@ -33,20 +33,24 @@
       </div>
       <div class="modal-body">
         <div class="form-group">
-    <label for="example-text-input" class="col-2 col-form-label">Name:</label>
-    <div class="col-10">
-      <input class="form-control" type="text" value="" id="example-text-input">
-    </div>
-    </div>
-    <label for="example-email-input" class="col-2 col-form-label">Email:</label>
-    <div class="col-10">
-      <input class="form-control" type="email" value="" id="example-email-input">
-    </div>
-    <label for="example-number-input" class="col-2 col-form-label">Zip Code:</label>
-    <div class="col-10">
-      <input class="form-control" type="number" value="" id="example-number-input">
-   </div>
-   <div class="dropdown">
+        <label for="example-text-input" class="col-2 col-form-label">Name:</label>
+        <div class="col-10">
+          <input class="form-control" type="text" value="" id="example-text-input">
+        </div>
+        </div>
+        <label for="example-email-input" class="col-2 col-form-label">Email:</label>
+        <div class="col-10">
+          <input class="form-control" type="email" value="" id="example-email-input">
+        </div>
+        <label for="example-number-input" class="col-2 col-form-label">Zip Code:</label>
+        <div class="col-10">
+          <input class="form-control" type="number" value="" id="example-number-input">
+       </div>
+       <label for="example-detail-input" class="col-2 col-form-label">Details</label>
+        <div class="col-10">
+          <input class="form-control" type="text" value="" id="detail">
+       </div>
+       <div class="dropdown">
       <button class="btn btn-default dropdown-toggle issue" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">     Issue     <span class="caret"></span>
       </button>
       <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
@@ -100,7 +104,7 @@
             <div class="caption">
               <h3>Installation/Repair</h3>
               <p>We install,    repair locks for your house within 24 hours of your request.</p>
-              <p><a href="#" class="btn btnii btn-primary btn-group-lg" role="button">Get a Quote Today</a></p> 
+              <p><button type="button" id="lock-request-installation" class="btn btn-primary lock-request" data-toggle="modal" data-target="#myModal">Get Quote/ Request Lock Smith</button></p> 
             </div>
           </div>
           </div>
@@ -111,7 +115,7 @@
             <div class="caption">
               <h3>Car Lockout</h3>
               <p>Locked out of your car? No problem, our team will be there to help.</p>
-              <p><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Lock</button></p>
+              <p><button type="button" id="lock-request-car" class="btn btn-primary lock-request" data-toggle="modal" data-target="#myModal">Get Quote/ Request Lock Smith</button></p>
             </div>
           </div>
           </div>
@@ -122,7 +126,7 @@
             <div class="caption">
               <h3>Office Lockout</h3>
               <p>Locked out of your business? No problem, our team will be there to help</p>
-              <p><a href="" class="btn btnii btn-primary btn-group-lg" role="button">Request Locksmith</a></p>
+              <p><button type="button" id="lock-request-work" class="btn btn-primary lock-request" data-toggle="modal" data-target="#myModal">Get Quote/ Request Lock Smith</button></p>
             </div>
           </div>
           </div>
@@ -133,20 +137,17 @@
             <div class="caption">
               <h3>House Lockout</h3>
               <p>Locked out of your business? No problem, our team will be there to help.</p>
-              <p><a href="#" class="btn btnii btn-primary btn-group-lg" role="button">Request Locksmith</a></p>
+              <p><button type="button" id="lock-request-house" class="btn btn-primary lock-request" data-toggle="modal" data-target="#myModal">Get Quote/ Request Lock Smith</button></p>
             </div>
           </div>
           </div>
           </div>
       </div>
 
-      <button type="button col-xs-4" class="btn btni btn-primary button">Get A Quote</button>
-      <button type="button col-xs-4" class="btn btni btn-primary button">Request a Locksmith</button>
+      
 
     
-   <img src="img/visa.jpg" class="img-fluid card col-xs-4" alt="responsive image">
-   <img src="img/discover.jpg" class="card img-fluid col-xs-4" alt="responsive image">
-   <img src="img/mastercard.jpg" class="card img-fluid col-xs-4" alt="responsive image">
+   
     </div><!-- /.container -->
 
 
@@ -158,20 +159,18 @@
     <script>window.jQuery || document.write('<script src="Scripts/jquery.min.js"><\/script>')</script>
     <script src="Scripts/bootstrap.min.js"></script>
 
-    <script>var slideIndex = 0;
-  carousel();
+    <script>
+      var jack = {
+        'lock-request-car' : 'Auto Lock Request',
+        'lock-request-house' : 'House Lock Request',
+        'lock-request-work' : 'Office Lock Request',
+        'lock-request-installation' : 'Lock Installation',
 
-  function carousel() {
-    var i;
-    var x = document.getElementsByClassName("mySlides");
-    for (i = 0; i < x.length; i++) {
-      x[i].style.display = "none"; 
-    }
-    slideIndex++;
-    if (slideIndex > x.length) {slideIndex = 1} 
-    x[slideIndex-1].style.display = "block"; 
-    setTimeout(carousel, 2000); // Change image every 2 seconds
-  }</script>
+      };
+      $('.lock-request').click( function () {
+        $('#myModalLabel').text(jack[$(this).attr('id')]);
+      });
+    </script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
   </body>
 </html>
