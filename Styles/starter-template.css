@@ -6,13 +6,20 @@ body {
   text-align: center;
 }*/
 
-
+.starter-template .content-title {
+	text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
 
 .caption .post-title {
 	margin: 10px;
 }
+.caption h3 {
+	text-align: center;
+}
 .thumbnail p {
-	text-align: left;
+	text-align: center;
 }
 
 .indented {
