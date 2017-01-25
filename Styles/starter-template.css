@@ -43,7 +43,7 @@ div h3 {
 }
 
 
-.navbar {height: 10%;}
+.navbar {height: 8%;}
 
 .body {text-align: left; padding-top:10px;}
 
@@ -71,3 +71,15 @@ label {padding-top: 10px;}
 
 @media screen and (max-width: 780px){#thumb {height: 325px;}
 }
+
+
+
+.about {
+	text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.aboutt {text-align: center;}
+
+.geto {margin-bottom: 100px;}
