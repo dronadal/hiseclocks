@@ -1,15 +1,12 @@
 body {
   padding-top: 50px;
 }
-.starter-template {
+/*.starter-template {
   padding: 40px 15px;
   text-align: center;
-}
+}*/
 
-.thumbnail img {
-	max-width: 300px;
-	padding-top: 10px;
-}
+
 
 .caption .post-title {
 	margin: 10px;
@@ -38,12 +35,8 @@ div h3 {
 	margin-bottom: 20px;
 }
 
-div img {
-	margin-top: 10px;
-	margin-bottom: 10px;
-}
 
-.navbar {max-height: 15%;}
+.navbar {height: 7%;}
 
 .body {text-align: left; padding-top:10px;}
 
@@ -52,11 +45,7 @@ div img {
 
 .right {text-align: right;}
 
-.liii {padding-top: 20px;}
-
-.btn {padding-bottom: 10px; padding-top: 10px;}
-
-img {max-width:100%;
+.card {max-width:100%;
 	max-height:100%;
     height: 200px;
     width: 30px;}
@@ -64,3 +53,18 @@ img {max-width:100%;
 .card {height: 50px; width: 100px;}
 
 label {padding-top: 10px;}
+
+
+
+/*need to create media queary for medium to small screens*/
+
+@media screen and (max-width: 1500px){
+
+#thumb img {
+    height: 150px;
+    width: 250px;
+}
+#thumb {
+    height: 360px;}
+
+}
