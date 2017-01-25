@@ -20,6 +20,65 @@
   </head>
 
   <body>
+    <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">
+    <label for="example-text-input" class="col-2 col-form-label">Name:</label>
+    <div class="col-10">
+      <input class="form-control" type="text" value="" id="example-text-input">
+    </div>
+    </div>
+    <label for="example-email-input" class="col-2 col-form-label">Email:</label>
+    <div class="col-10">
+      <input class="form-control" type="email" value="" id="example-email-input">
+    </div>
+    <label for="example-number-input" class="col-2 col-form-label">Zip Code:</label>
+    <div class="col-10">
+      <input class="form-control" type="number" value="" id="example-number-input">
+   </div>
+   <div class="dropdown">
+      <button class="btn btn-default dropdown-toggle issue" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">     Issue     <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        <li class="dropdown-header">Residential</li>
+        <li>Residential Lock Change</li>
+        <li>Residential Lock Repair</li>
+        <li>Residential Lock Rekey</li>
+        <li>Residential Lockout</li>
+        <li role="separator" class="divider"></li>
+        <li class="dropdown-header">Commercial</li>
+        <li>Commercial Installation</li>
+        <li>Commercial Lock Repair</li>
+        <li>Commercial Lock Rekey</li>
+        <li>Commercial Lockout</li>
+        <li role="separator" class="divider"></li>
+        <li class="dropdown-header">Mailbox</li>
+        <li>Mailbox Lock Change</li>
+        <li>Mailbox Lockout</li>
+        <li role="separator" class="divider"></li>
+        <li class="dropdown-header">Car</li>
+        <li>Car Lockout</li>
+      </ul>
+    </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <nav class="navbar navbar-inverse navbar-fixed-top">
       <div class="container">
@@ -52,7 +111,7 @@
             <div class="caption">
               <h3>Car Lockout</h3>
               <p>Locked out of your car? No problem, our team will be there to help.</p>
-              <p><a href="" class="btn btnii btn-primary btn-group-lg" role="button">Request Locksmith</a></p>
+              <p><button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Lock</button></p>
             </div>
           </div>
           </div>
@@ -84,44 +143,7 @@
       <button type="button col-xs-4" class="btn btni btn-primary button">Get A Quote</button>
       <button type="button col-xs-4" class="btn btni btn-primary button">Request a Locksmith</button>
 
-    <div class="form-group">
-    <label for="example-text-input" class="col-2 col-form-label">Name:</label>
-    <div class="col-10">
-      <input class="form-control" type="text" value="" id="example-text-input">
-    </div>
-    </div>
-    <label for="example-email-input" class="col-2 col-form-label">Email:</label>
-    <div class="col-10">
-      <input class="form-control" type="email" value="" id="example-email-input">
-    </div>
-    <label for="example-number-input" class="col-2 col-form-label">Zip Code:</label>
-    <div class="col-10">
-      <input class="form-control" type="number" value="" id="example-number-input">
-   </div>
-   <div class="dropdown">
-  <button class="btn btn-default dropdown-toggle issue" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">     Issue     <span class="caret"></span>
-  </button>
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-    <li class="dropdown-header">Residential</li>
-    <li>Residential Lock Change</li>
-    <li>Residential Lock Repair</li>
-    <li>Residential Lock Rekey</li>
-    <li>Residential Lockout</li>
-    <li role="separator" class="divider"></li>
-    <li class="dropdown-header">Commercial</li>
-    <li>Commercial Installation</li>
-    <li>Commercial Lock Repair</li>
-    <li>Commercial Lock Rekey</li>
-    <li>Commercial Lockout</li>
-    <li role="separator" class="divider"></li>
-    <li class="dropdown-header">Mailbox</li>
-    <li>Mailbox Lock Change</li>
-    <li>Mailbox Lockout</li>
-    <li role="separator" class="divider"></li>
-    <li class="dropdown-header">Car</li>
-    <li>Car Lockout</li>
-  </ul>
-</div>
+    
    <img src="img/visa.jpg" class="img-fluid card col-xs-4" alt="responsive image">
    <img src="img/discover.jpg" class="card img-fluid col-xs-4" alt="responsive image">
    <img src="img/mastercard.jpg" class="card img-fluid col-xs-4" alt="responsive image">
