@@ -69,7 +69,8 @@ label {padding-top: 10px;}
 #thumb {
     height: 350px;}	
 
-@media screen and (max-width: 780px){#thumb {height: 325px;}
+@media screen and (max-width: 780px){#thumb {height: 325px;} .navbar {height: 10%;}}
+
 }
 
 
