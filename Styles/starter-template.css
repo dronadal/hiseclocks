@@ -36,7 +36,7 @@ div h3 {
 }
 
 
-.navbar {height: 7%;}
+.navbar {height: 10%;}
 
 .body {text-align: left; padding-top:10px;}
 
@@ -55,16 +55,12 @@ div h3 {
 label {padding-top: 10px;}
 
 
-
-/*need to create media queary for medium to small screens*/
-
-@media screen and (max-width: 1500px){
-
 #thumb img {
     height: 150px;
     width: 250px;
 }
 #thumb {
-    height: 360px;}
+    height: 350px;}	
 
+@media screen and (max-width: 780px){#thumb {height: 325px;}
 }
