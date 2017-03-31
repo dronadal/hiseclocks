@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!-- saved from url=(0051)file:///C:/Users/Evandro/Desktop/Dev/Kev/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Fitness</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="./Fitness_files/bootstrap.min.css" rel="stylesheet">
+    <link href="./Fitness_files/starter-template.css" rel="stylesheet">
+    <link href="./Fitness_files/css" rel="stylesheet">
+    <link rel="shortcut icon" href="file:///C:/Users/Evandro/Desktop/Dev/Kev/img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="file:///C:/Users/Evandro/Desktop/Dev/Kev/img/favicon.ico" type="image/x-icon">
+ 
+  </head>
+
+  <body class="">
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" style="display: none;">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+            <h4 class="modal-title" id="myModalLabel">House Lock Request</h4>
+          </div>
+          <div class="modal-body">
+
+          <div class="form-group">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Confirm Password</label>
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+          </div>
+           </div>
+           <div class="dropdown">
+        </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+      
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="file:///C:/Users/Evandro/Desktop/Dev/Kev/index.html">Notre Dame Health &amp; Fitness</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="file:///C:/Users/Evandro/Desktop/Dev/Kev/index.html">Home</a></li>
+            <li><a href="file:///C:/Users/Evandro/Desktop/Dev/Kev/get_active.html">Get Active</a></li>
+            <li><a href="file:///C:/Users/Evandro/Desktop/Dev/Kev/projects.html">Projects</a></li>
+            <li><a href="file:///C:/Users/Evandro/Desktop/Dev/Kev/forum.html">Forum</a></li>
+            <li><a href="file:///C:/Users/Evandro/Desktop/Dev/Kev/about.html">About</a></li>
+          </ul>
+<!--           <p class="navbar-text navbar-right"><a <button type='button' id="lock-request-house" class='btn btn-primary' data-toggle="modal" data-target="#myModal">Donate</button></a></p> -->
+              <p><a button="" type="button" id="lock-request-house" class="btn btn-primary lock-request navbar-text navbar-right" data-toggle="modal" data-target="#myModal">Donate</a></p>
+          </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+      <div class="container">
+
+
+      <div class="jumbotroni centered">
+        <img class="&lt;img-responsive center-block imagelogo" src="./Fitness_files/logo.jpg">
+        <h1 class="display-3 text-center jj">Notre Dame Health &amp; Fitness</h1>
+        <p class="lead">Brief description-mission statement".Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.</p>
+        <p class="lead">It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead centerbtn">
+        <a class="btn btn-primary btn-lg center-text" href="file:///C:/Users/Evandro/Desktop/Dev/Kev/index.html#" role="button">Sign Up!</a>
+        </p>
+        </div>
+    </div><!-- /.container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <script src="./Fitness_files/jquery.min.js.download"> </script>
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="./Fitness_files/jquery.min.js(1).download"></script>
+    <script>window.jQuery || document.write('<script src="Scripts/jquery.min.js"><\/script>')</script>
+    <script src="./Fitness_files/bootstrap.min.js.download"></script>
+    <script>
+      var jack = {
+        'lock-request-car' : 'Auto Lock Request',
+        'lock-request-house' : 'House Lock Request',
+        'lock-request-work' : 'Office Lock Request',
+        'lock-request-installation' : 'Lock Installation',
+
+      };
+      $('.lock-request').click( function () {
+        $('#myModalLabel').text(jack[$(this).attr('id')]);
+      });
+    </script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  
+
+</body></html>
