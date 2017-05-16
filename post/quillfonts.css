@@ -1,0 +1,37 @@
+#toolbar-container .ql-font span[data-label="Aref Ruqaa"]::before {
+  font-family: "Aref Ruqaa";
+}
+#toolbar-container .ql-font span[data-label="Mirza"]::before {
+  font-family: "Mirza";
+}
+#toolbar-container .ql-font span[data-label="Roboto"]::before {
+  font-family: "Roboto";
+}
+
+#toolbar-container .ql-font span[data-label="Oswald"]::before {
+  font-family: "Oswald";
+}
+
+#toolbar-container .ql-font span[data-label="Comic Sans Ms"]::before {
+  font-family: "Comic Sans Ms";
+}
+
+/* Set content font-families */
+.ql-font-mirza {
+  font-family: "Mirza";
+}
+.ql-font-roboto {
+  font-family: "Roboto";
+}
+
+.ql-font-oswald {
+  font-family: "Oswald";
+}
+
+.ql-font-comic-sans-ms {
+  font-family: "Comic Sans Ms";
+}
+
+#toolbar {
+	display: none;
+}
